@@ -6,6 +6,8 @@ A minimal, production-ish example showing:
 - **ReplyListener** receives the confirmation and logs it.
 - **CorrelationId** is used to match request ↔ reply.
 - **Dedup (idempotency)** pattern to avoid double-processing (in-memory; Redis optional).
+- ** QueueBuilder.durable persistes Queue on disk
+- **  props.setDeliveryMode(MessageDeliveryMode.PERSISTENT) persistes Message on disk
 - **Docker Compose** with **RabbitMQ Management UI** and **MailHog** (SMTP catcher) for local development.
 
 > JDK 21 • Spring Boot 3.3.x • RabbitMQ 3.13 • MailHog (dev) • Optional Redis (prod dedup)
