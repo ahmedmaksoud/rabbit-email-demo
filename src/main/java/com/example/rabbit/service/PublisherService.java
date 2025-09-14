@@ -4,6 +4,7 @@ import com.example.rabbit.RabbitConfig;
 import com.example.rabbit.model.WorkRequest;
 import org.springframework.amqp.core.Address;
 import org.springframework.amqp.core.Message;
+import org.springframework.amqp.core.MessageDeliveryMode;
 import org.springframework.amqp.core.MessageProperties;
 import org.springframework.amqp.rabbit.connection.CorrelationData;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
@@ -28,6 +29,8 @@ public class PublisherService {
         props.setContentEncoding(StandardCharsets.UTF_8.name());
         props.setReplyToAddress(new Address(RabbitConfig.EXCHANGE + "/" + RabbitConfig.REPLY_RK));
         props.setCorrelationId(correlationId);
+        /// write on disk
+        props.setDeliveryMode(MessageDeliveryMode.PERSISTENT);
         Message msg = template.getMessageConverter().toMessage(request, props);
         CorrelationData cd = new CorrelationData(correlationId);
         template.send(RabbitConfig.EXCHANGE, RabbitConfig.WORK_RK, msg, cd);
