@@ -8,7 +8,7 @@ A minimal, production-ish example showing:
 - **Dedup (idempotency)** pattern to avoid double-processing (in-memory; Redis optional).
 - **Docker Compose** with **RabbitMQ Management UI** and **MailHog** (SMTP catcher) for local development.
 
-> JDK 17 • Spring Boot 3.3.x • RabbitMQ 3.13 • MailHog (dev) • Optional Redis (prod dedup)
+> JDK 21 • Spring Boot 3.3.x • RabbitMQ 3.13 • MailHog (dev) • Optional Redis (prod dedup)
 
 ---
 
