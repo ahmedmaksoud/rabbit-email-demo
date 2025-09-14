@@ -1,0 +1,8 @@
+com\example\rabbit\service\PublisherService.class
+com\example\rabbit\model\WorkRequest.class
+com\example\rabbit\service\ReplyListener.class
+com\example\rabbit\service\WorkerListener.class
+com\example\rabbit\RabbitConfig.class
+com\example\rabbit\model\WorkConfirmation.class
+com\example\rabbit\RabbitEmailDemoApplication.class
+com\example\rabbit\service\EmailService.class

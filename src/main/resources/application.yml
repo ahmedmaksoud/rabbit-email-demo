@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: rabbit-email-demo
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+    publisher-confirm-type: correlated
+    template:
+      mandatory: true
+
+  mail:
+    host: smtp.example.com
+    port: 587
+    username: your_smtp_username
+    password: your_smtp_password
+    properties:
+      mail.smtp.auth: true
+      mail.smtp.starttls.enable: true
+
+notification:
+  from: "no-reply@example.com"
+  to: "ops@example.com"
+
+logging:
+  level:
+    org.springframework.amqp: INFO

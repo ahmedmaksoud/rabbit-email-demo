@@ -1,0 +1,8 @@
+C:\work\projects\rabbit-email-demo\src\main\java\com\example\rabbit\model\WorkConfirmation.java
+C:\work\projects\rabbit-email-demo\src\main\java\com\example\rabbit\model\WorkRequest.java
+C:\work\projects\rabbit-email-demo\src\main\java\com\example\rabbit\RabbitConfig.java
+C:\work\projects\rabbit-email-demo\src\main\java\com\example\rabbit\RabbitEmailDemoApplication.java
+C:\work\projects\rabbit-email-demo\src\main\java\com\example\rabbit\service\EmailService.java
+C:\work\projects\rabbit-email-demo\src\main\java\com\example\rabbit\service\PublisherService.java
+C:\work\projects\rabbit-email-demo\src\main\java\com\example\rabbit\service\ReplyListener.java
+C:\work\projects\rabbit-email-demo\src\main\java\com\example\rabbit\service\WorkerListener.java
